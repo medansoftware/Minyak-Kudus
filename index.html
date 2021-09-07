@@ -294,6 +294,14 @@ $(document).ready(function(){
 			}
 		});
 	}
+
+	window.addEventListener('beforeunload', function (e) {
+		e.preventDefault();
+		localStorage.removeItem('tour-guide');
+		var confirmationMessage = "\o/";
+		(e || window.event).returnValue = confirmationMessage; //Gecko + IE
+		return confirmationMessage;
+	});
 });
 </script>
 </html>
