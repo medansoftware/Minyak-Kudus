@@ -1,1 +1,3 @@
-# MaterializeCSS Starter | Medan Software
+# [Minyak Kudus](https://minyakkudus.com) | Medan Software
+
+> Improvement SEO site
