@@ -7,6 +7,7 @@
 	<meta name="robots" content="index, follow">
 	<meta name="description" content="Dibuat oleh Mpuh Sembiring dengan 99 tumbuhan herbal tanah Karo">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/materialize/css/materialize.min.css" media="screen,projection">
 	<style type="text/css">
@@ -15,7 +16,7 @@
 
 	body {
 		font-family: 'Rajdhani', sans-serif;
-		background-color: gray;
+		/*background-color: black;*/
 	}
 
 	.nav-wrapper {
@@ -38,6 +39,10 @@
 
 	#nav-mobile {
 		margin-left: 22%;
+	}
+
+	.card-title > h1 {
+		color: black;
 	}
 
 	.tap-target {
@@ -94,17 +99,75 @@
 		background-color: #CC0612;
 	}
 
+	.minyak-kudus-images-box-3 {
+		width: 100%;
+		min-height: 240px;
+		max-height: 240px;
+		margin-top: 10%;
+	}
+
+	.majun-magh-images-box-3 {
+		width: 100%;
+		min-height: 240px;
+		max-height: 240px;
+		margin-top: 10%;
+	}
+
+	/* on desktop  */
 	@media screen and (min-width: 800px) {
 		.page-footer {
 			position: fixed;
 			bottom: 0;
-			top: 640px;
+			top: 620px;
 			width: 100%;
 			z-index: 1;
 		}
 
 		.row-content {
 			margin-bottom: 4%;
+		}
+
+		.carousel__slide > a > img {
+			min-height: 480px;
+			max-height: 40%;
+		}
+
+		.carousel__dots {
+			margin-top: -7%;
+		}
+
+		.carousel-fancy-widget {
+			margin-bottom: -34%;
+		}
+	}
+
+	/* on mobile  */
+	@media only screen and (max-device-width: 640px) {
+		.minyak-kudus-images-box-3 {
+			width: 100%;
+			min-height: 220px;
+			max-height: 220px;
+			margin-top: 10%;
+		}
+
+		.majun-magh-images-box-3 {
+			width: 100%;
+			min-height: 220px;
+			max-height: 220px;
+			margin-top: 10%;
+		}
+
+		.carousel__slide > a > img {
+			min-height: 48%;
+			max-height: 48%;
+		}
+
+		.carousel__dots {
+			margin-top: -16%;
+		}
+
+		.carousel-fancy-widget {
+			margin-bottom: -120%;
 		}
 	}
 	</style>
@@ -135,8 +198,8 @@
 	<div class="navbar-fixed">
 		<nav>
 			<div class="nav-wrapper">
-				<a href="minyak-kudus.html" class="brand-logo brand-logo-desktop hide-on-med-and-down">Minyak Kudus</a>
-				<a href="majun-magh.html" class="brand-logo brand-logo-mobile hide-on-large-only left">Minyak Kudus</a>
+				<a href="index.html" class="brand-logo brand-logo-desktop hide-on-med-and-down">Minyak Kudus</a>
+				<a href="index.html" class="brand-logo brand-logo-mobile hide-on-large-only left">Minyak Kudus</a>
 				<ul id="nav-mobile" class="left hide-on-med-and-down">
 					<li><a href="minyak-kudus.html">Minyak Kudus</a></li>
 					<li><a href="majun-magh.html">Ma'jun Magh</a></li>
@@ -149,11 +212,30 @@
 
 	<!-- row content start -->
 	<div class="row row-content">
+		<div class="col l12 s12 m12 carousel-fancy-widget">
+			<div class="carousel-fancy">
+				<div class="carousel__slide">
+					<a data-fancybox="carousel" data-src="images/minyak-kudus/sad8123bsk1sushajsjkxm.jpg">
+						<img src="images/minyak-kudus/sad8123bsk1sushajsjkxm.jpg">
+					</a>
+				</div>
+				<div class="carousel__slide">
+					<a data-fancybox="gallery" data-src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.56.jpeg">
+						<img class="" src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.56.jpeg">
+					</a>
+				</div>
+				<div class="carousel__slide">
+					<a data-fancybox="gallery" data-src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.51.jpeg">
+						<img class="" src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.51.jpeg">
+					</a>
+				</div>
+			</div>
+		</div>
 		<div class="col l12 s12 m12">
 			<div class="col l12 s12 m12">
 				<div class="card">
 					<div class="card-content">
-						<span class="card-title"><h1>Apa itu Minyak Kudus?</h1></span>
+						<span class="card-title"><h1>Minyak Kudus</h1></span>
 						<p style="font-size: 20px;">
 							Minyak Kudus merupakan minyak herbal yang kaya akan manfaat untuk kesehatan tubuh, menggunakan rempah-rempah alami dari dataran tinggi tanah karo yang dipercayakan khasiatnya dari dahulu kala serta ditambahkan DAUN BIDARA yang mana daun ini banyak disebutkan Nabi Muhammad SAW serta terdapat dalam Al-Qur’an diantaranya :
 							<ol style="font-size: 18px;">
@@ -163,10 +245,48 @@
 							</ol>
 						</p>
 						<p style="font-size: 20px;">Selain dapat mengobati penyakit medis, Minyak Kudus bisa juga sebagai sarana RUQYAH karena terdapat kandungan daun bidara didalamnya. Ruqyah adalah metode Nabi dalam menyembuhkan orang dari gangguan jin dan sihir. Ruqyah juga dapat dimanfaatkan untuk penyembuhan penyakit yang ada dalam tubuh. Minyak Kudus yang kami buat telah melewati proses pembacaan ayat-ayat Ruqyah dari Al-Qur’an dan doa-doa dari Assunah dan bukan mantra yang melanggar syariat agama.</p>
-					</div>
-					<div class="card-action">
-						<a href="#">This is a link</a>
-						<a href="#">This is a link</a>
+						<div class="row" style="margin-top: 2%;">
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery-minyak-kudus" data-src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.49.jpeg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.49.jpeg">
+								</a>
+							</div>
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery-minyak-kudus" data-src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.51.jpeg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.51.jpeg">
+								</a>
+							</div>
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery-minyak-kudus" data-src="images/minyak-kudus/sad8123bsk1sushajsjkxm.jpg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/sad8123bsk1sushajsjkxm.jpg">
+								</a>
+							</div>
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery-minyak-kudus" data-src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.56.jpeg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.56.jpeg">
+								</a>
+							</div>
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery-minyak-kudus" data-src="images/minyak-kudus/3304979_7d3172a5-9e3d-4cbd-8abe-0cc53ff354ec_1500_1500.jpg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/3304979_7d3172a5-9e3d-4cbd-8abe-0cc53ff354ec_1500_1500.jpg">
+								</a>
+							</div>
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery-minyak-kudus" data-src="images/minyak-kudus/712bsa17126624517491287212.jpg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/712bsa17126624517491287212.jpg">
+								</a>
+							</div>
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery-minyak-kudus" data-src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.45.jpeg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.45.jpeg">
+								</a>
+							</div>
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery-minyak-kudus" data-src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.59-1.jpeg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.59-1.jpeg">
+								</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -175,20 +295,49 @@
 			<div class="col l12 s12 m12">
 				<div class="card">
 					<div class="card-content">
-						<span class="card-title"><h1>Apa itu Ma'jun Magh?</h1></span>
-						<p style="font-size: 20px;">
-							Minyak Kudus merupakan minyak herbal yang kaya akan manfaat untuk kesehatan tubuh, menggunakan rempah-rempah alami dari dataran tinggi tanah karo yang dipercayakan khasiatnya dari dahulu kala serta ditambahkan DAUN BIDARA yang mana daun ini banyak disebutkan Nabi Muhammad SAW serta terdapat dalam Al-Qur’an diantaranya :
-							<ol style="font-size: 18px;">
-								<li>Surat Assaba ayat 16</li>
-								<li>Surat Assaba ayat 16</li>
-								<li>Surat Assaba ayat 16</li>
-							</ol>
-						</p>
-						<p style="font-size: 20px;">Selain dapat mengobati penyakit medis, Minyak Kudus bisa juga sebagai sarana RUQYAH karena terdapat kandungan daun bidara didalamnya. Ruqyah adalah metode Nabi dalam menyembuhkan orang dari gangguan jin dan sihir. Ruqyah juga dapat dimanfaatkan untuk penyembuhan penyakit yang ada dalam tubuh. Minyak Kudus yang kami buat telah melewati proses pembacaan ayat-ayat Ruqyah dari Al-Qur’an dan doa-doa dari Assunah dan bukan mantra yang melanggar syariat agama.</p>
-					</div>
-					<div class="card-action">
-						<a href="#">This is a link</a>
-						<a href="#">This is a link</a>
+						<span class="card-title"><h1>Tawar Ma'jun</h1></span>
+						<!-- <div class="row" style="margin-top: 2%;">
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery" data-src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.49.jpeg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.49.jpeg">
+								</a>
+							</div>
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery" data-src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.51.jpeg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.51.jpeg">
+								</a>
+							</div>
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery" data-src="images/minyak-kudus/sad8123bsk1sushajsjkxm.jpg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/sad8123bsk1sushajsjkxm.jpg">
+								</a>
+							</div>
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery" data-src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.56.jpeg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.56.jpeg">
+								</a>
+							</div>
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery" data-src="images/minyak-kudus/3304979_7d3172a5-9e3d-4cbd-8abe-0cc53ff354ec_1500_1500.jpg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/3304979_7d3172a5-9e3d-4cbd-8abe-0cc53ff354ec_1500_1500.jpg">
+								</a>
+							</div>
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery" data-src="images/minyak-kudus/712bsa17126624517491287212.jpg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/712bsa17126624517491287212.jpg">
+								</a>
+							</div>
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery" data-src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.45.jpeg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.45.jpeg">
+								</a>
+							</div>
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery" data-src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.59-1.jpeg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.59-1.jpeg">
+								</a>
+							</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -198,74 +347,48 @@
 				<div class="card">
 					<div class="card-content">
 						<span class="card-title"><h1>Galeri CEO Minyak Kudus</h1></span>
-						<div class="row">
-							<div class="col l12">
-								<div class="col l3">
-									<div class="card">
-										<div class="card-image waves-effect waves-block waves-light">
-											<img alt="" class="activator" src="https://materializecss.com/images/office.jpg">
-										</div>
-										<div class="card-content">
-											<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-											<p><a href="#">This is a link</a></p>
-										</div>
-										<div class="card-reveal">
-											<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-											<p>Here is some more information about this product that is only revealed once clicked on.</p>
-										</div>
-									</div>
-								</div>
-								<div class="col l3">
-									<div class="card">
-										<div class="card-image waves-effect waves-block waves-light">
-											<img alt="" class="activator" src="https://materializecss.com/images/office.jpg">
-										</div>
-										<div class="card-content">
-											<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-											<p><a href="#">This is a link</a></p>
-										</div>
-										<div class="card-reveal">
-											<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-											<p>Here is some more information about this product that is only revealed once clicked on.</p>
-										</div>
-									</div>
-								</div>
-								<div class="col l3">
-									<div class="card">
-										<div class="card-image waves-effect waves-block waves-light">
-											<img alt="" class="activator" src="https://materializecss.com/images/office.jpg">
-										</div>
-										<div class="card-content">
-											<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-											<p><a href="#">This is a link</a></p>
-										</div>
-										<div class="card-reveal">
-											<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-											<p>Here is some more information about this product that is only revealed once clicked on.</p>
-										</div>
-									</div>
-								</div>
-								<div class="col l3">
-									<div class="card">
-										<div class="card-image waves-effect waves-block waves-light">
-											<img alt="" class="activator" src="https://materializecss.com/images/office.jpg">
-										</div>
-										<div class="card-content">
-											<span class="card-title activator grey-text text-darken-4">Card Title<i class="material-icons right">more_vert</i></span>
-											<p><a href="#">This is a link</a></p>
-										</div>
-										<div class="card-reveal">
-											<span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
-											<p>Here is some more information about this product that is only revealed once clicked on.</p>
-										</div>
-									</div>
-								</div>
+						<!-- <div class="row" style="margin-top: 2%;">
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery" data-src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.49.jpeg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.49.jpeg">
+								</a>
 							</div>
-						</div>
-					</div>
-					<div class="card-action">
-						<a href="#">This is a link</a>
-						<a href="#">This is a link</a>
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery" data-src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.51.jpeg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.51.jpeg">
+								</a>
+							</div>
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery" data-src="images/minyak-kudus/sad8123bsk1sushajsjkxm.jpg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/sad8123bsk1sushajsjkxm.jpg">
+								</a>
+							</div>
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery" data-src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.56.jpeg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.56.jpeg">
+								</a>
+							</div>
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery" data-src="images/minyak-kudus/3304979_7d3172a5-9e3d-4cbd-8abe-0cc53ff354ec_1500_1500.jpg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/3304979_7d3172a5-9e3d-4cbd-8abe-0cc53ff354ec_1500_1500.jpg">
+								</a>
+							</div>
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery" data-src="images/minyak-kudus/712bsa17126624517491287212.jpg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/712bsa17126624517491287212.jpg">
+								</a>
+							</div>
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery" data-src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.45.jpeg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.45.jpeg">
+								</a>
+							</div>
+							<div class="col l3 m12 s12">
+								<a data-fancybox="gallery" data-src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.59-1.jpeg">
+									<img class="materialboxed minyak-kudus-images-box-3" src="images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.59-1.jpeg">
+								</a>
+							</div>
+						</div> -->
 					</div>
 				</div>
 			</div>
@@ -340,7 +463,7 @@
 		<a class="btn-floating btn-large blue left" id="menu"><i class="material-icons">add</i></a>
 		<ul>
 			<li><a href="https://shorturl.at/wAIQZ" class="btn-floating green darken-1"><i class="fa fa-whatsapp"></i></a></li>
-			<li><a href="tel://+6282160743576" class="btn-floating blue"><i class="fa fa-phone"></i></a></li>
+			<li><a href="tel:+6282160743576" class="btn-floating blue"><i class="fa fa-phone"></i></a></li>
 		</ul>
 	</div>
 	<!-- floating button end -->
@@ -506,7 +629,13 @@
 				"name": "Minyak Kudus",
 				"description": "Minyakk",
 				"image": [
-					"http://img01.multivarki.ru.ru/c9/f1/a5fe6642-18d0-47ad-b038-6fca20f1c923.jpeghttp://img01.multivarki.ru.ru/c9/f1/a5fe6642-18d0-47ad-b038-6fca20f1c923.jpeg"
+					"https://minyakkudus.com/images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.51.jpeg",
+					"https://minyakkudus.com/images/minyak-kudus/sad8123bsk1sushajsjkxm.jpg",
+					"https://minyakkudus.com/images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.56.jpeg",
+					"https://minyakkudus.com/images/minyak-kudus/3304979_7d3172a5-9e3d-4cbd-8abe-0cc53ff354ec_1500_1500.jpg",
+					"https://minyakkudus.com/images/minyak-kudus/712bsa17126624517491287212.jpg",
+					"https://minyakkudus.com/images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.45.jpeg",
+					"https://minyakkudus.com/images/minyak-kudus/WhatsApp-Image-2021-07-27-at-21.58.59-1.jpeg"
 				],
 				"brand": "Mpuh Sembiring",
 				"availability": "https://schema.org/InStock",
@@ -586,11 +715,47 @@
 }
 </script>
 <!-- JSON-LD PRODUCT LIST END -->
+
+<!-- JSON-LD FAQ START -->
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "FAQPage",
+	"mainEntity": [
+		{
+			"@type": "Question",
+			"name": "Apa itu Minyak Kudus",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Minyak Kudus merupakan minyak herbal yang kaya akan manfaat untuk kesehatan tubuh, menggunakan rempah-rempah alami dari dataran tinggi tanah karo yang dipercayakan khasiatnya dari dahulu kala serta ditambahkan DAUN BIDARA yang mana daun ini banyak disebutkan Nabi Muhammad SAW serta terdapat dalam Al-Qur’an diantaranya : &lt;ol&gt;&lt;li&gt;Surat Assaba ayat 16&lt;/li&gt;&lt;li&gt;Surat Assaba ayat 16&lt;/li&gt;&lt;li&gt;Surat Assaba ayat 16&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;Selain dapat mengobati penyakit medis, Minyak Kudus bisa juga sebagai sarana RUQYAH karena terdapat kandungan daun bidara didalamnya. Ruqyah adalah metode Nabi dalam menyembuhkan orang dari gangguan jin dan sihir. Ruqyah juga dapat dimanfaatkan untuk penyembuhan penyakit yang ada dalam tubuh. Minyak Kudus yang kami buat telah melewati proses pembacaan ayat-ayat Ruqyah dari Al-Qur’an dan doa-doa dari Assunah dan bukan mantra yang melanggar syariat agama.&lt;/p&gt;"
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "Khasiat Minyak Kudus",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Manfaat/Khasiat Minyak Kudus &lt;ol&gt;&lt;li&gt;Asam Urat&lt;/li&gt;&lt;li&gt;Rematik&lt;/li&gt;&lt;li&gt;Kesemutan&lt;/li&gt;&lt;li&gt;Nyeri Sendi&lt;/li&gt;&lt;li&gt;Pegal Linu&lt;/li&gt;&lt;li&gt;Keseleo&lt;/li&gt;&lt;li&gt;Salah Tidur&lt;/li&gt;&lt;li&gt;Sakit Pinggang&lt;/li&gt;&lt;li&gt;Leher Tegang&lt;/li&gt;&lt;li&gt;Saraf Kejepit&lt;/li&gt;&lt;li&gt;Nyeri Arthritis&lt;/li&gt;&lt;li&gt;Nyeri Otot&lt;/li&gt;&lt;li&gt;Otot Bengkak&lt;/li&gt;&lt;li&gt;Otot Kejang&lt;/li&gt;&lt;li&gt;Kram Olahraga&lt;/li&gt;&lt;li&gt;Perut Kembang&lt;/li&gt;&lt;li&gt;Panas&lt;/li&gt;&lt;li&gt;Flu&lt;/li&gt;&lt;li&gt;Meriang&lt;/li&gt;&lt;li&gt;Masuk Angin&lt;/li&gt;&lt;li&gt;Badan Panas&lt;/li&gt;&lt;li&gt;Gejala Tipes&lt;/li&gt;&lt;li&gt;Demam Berdarah&lt;/li&gt;&lt;li&gt;Vertigo&lt;/li&gt;&lt;li&gt;Sakit Kepala&lt;/li&gt;&lt;li&gt;Kepala Tegang&lt;/li&gt;&lt;li&gt;Penambah Stamina&lt;/li&gt;&lt;li&gt;Anyang Anyangan&lt;/li&gt;&lt;li&gt;Sakit Gigi&lt;/li&gt;&lt;li&gt;Sariawan&lt;/li&gt;&lt;li&gt;Gusi Bengkak&lt;/li&gt;&lt;li&gt;Keputihan&lt;/li&gt;&lt;li&gt;Kista&lt;/li&gt;&lt;li&gt;Miom&lt;/li&gt;&lt;li&gt;Herpes&lt;/li&gt;&lt;li&gt;Digigit Serangga&lt;/li&gt;&lt;li&gt;Digigit Kelabang&lt;/li&gt;&lt;li&gt;Tersentuh Ulat Bulu&lt;/li&gt;&lt;li&gt;Disengat Kalajengking&lt;/li&gt;&lt;/ol&gt;"
+			}
+		},
+		{
+			"@type": "Question",
+			"name": "CEO Minyak Kudus?",
+			"acceptedAnswer": {
+				"@type": "Answer",
+				"text": "Mpuh Sembiring adalah pria dibalik obat herbal Minyak Kudus"
+			}
+		}
+	]
+}
+</script>
+<!-- JSON-LD FAQ END -->
+
 <script type="text/javascript" src="assets/jquery/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.min.js"></script>
 <script type="text/javascript" src="assets/materialize/js/materialize.min.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
-
 	function setCookie(cname, cvalue, exdays) {
 		const d = new Date();
 		d.setTime(d.getTime() + (exdays*24*60*60*1000));
@@ -620,8 +785,11 @@ $(document).ready(function(){
 
 	$('.sidenav').sidenav();
 
-	$('.materialboxed').materialbox();
-
+	Fancybox.bind("[data-fancybox]", {
+		Image: {
+			zoom: true,
+		}
+	})
 	if ($('.fixed-action-btn').css('display') !== 'none') {
 		var tour_guide = getCookie('feature_discovery');
 		$('.tap-target').tapTarget({
@@ -637,5 +805,7 @@ $(document).ready(function(){
 		}
 	}
 });
+
+new Carousel(document.querySelector(".carousel-fancy"));
 </script>
 </html>
