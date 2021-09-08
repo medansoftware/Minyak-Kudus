@@ -47,6 +47,19 @@ $(document).ready(function(){
 			$('.tap-target').tapTarget('open');
 		}
 	}
+
+	var show_promo = getCookie('show_promo');
+	if (show_promo.length <= 1) {
+		var promo_content = '';
+		promo_content += '<h5>PROMO MINYAK KUDUS BELI 2 GRATIS 2</h5>';
+		promo_content += '<p>Minyak Kudus harga Rp 80.000/botol.<br>Beli 2 gratis 2 botol!!<br>Cek selengkapnya di <a href="https://shopee.co.id/mpuhsembiringgurukinayan/4661759722?smtt=0.0.9">Shopee</a> atau kamu bisa chat langsung ke admin dari fitur yang sudah disediakan</p>';
+		new Fancybox([{
+			src: promo_content,
+			type: 'html',
+		}]);
+
+		setCookie('show_promo', 'shown', 1);
+	}
 });
 
 new Carousel(document.querySelector('.carousel-fancy'));
