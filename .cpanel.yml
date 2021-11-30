@@ -2,6 +2,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/minz3325/public_html/
-    - /bin/cp -R images $DEPLOYPATH
-    - /bin/cp -R assets $DEPLOYPATH
-    - /bin/cp -R errors $DEPLOYPATH
+    - /bin/cp -a * $DEPLOYPATH
