@@ -1,5 +1,5 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/minz3325/public_html/
+    - export DEPLOYPATH=/home/minz3325/public_html/web/
     - /bin/cp -a * $DEPLOYPATH
